@@ -1,0 +1,14 @@
+/* Important files */
+index.js -> to connect database
+app.js -> for the configurations (config, cookie, urlencode)
+constants -> in this functionality, we put things which are restricted and user can only choose from them here (enums, db-name)
+
+/* Directory Strucutre */
+
+DB -> Actual code that connects from database, then we connect it in index.js
+Models -> Schema of the database
+Controllers -> Methods/Functions 
+Routes -> 
+Middlewares -> 
+Utils -> like Email, file uploading
+More(depends) -> 

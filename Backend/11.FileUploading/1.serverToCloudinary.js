@@ -6,7 +6,7 @@
 */ 
 
 
-/* to store file in backend we need two packages -> multer, express-fileupload
+/* to store file in backend we need either two packages -> multer, express-fileupload
     
 strategy -> through multer we will let the file upload on local server
             through cloudinary we will put the file from local server(storage) to the cloudinary server
@@ -26,7 +26,7 @@ cloudinary.config({
 
 
 /* organizing the last function a bit, create a method, in method give me the parameter of the path of local file 
-   than upload it if succesfully uploaded than unlink the file */ 
+   than upload it if succesfully uploaded, than unlink the file */ 
 
 const uploadOnCloudinary = async(localFilePath) => {
    try {
@@ -48,3 +48,4 @@ cloudinary.v2.uploader.upload("https://upload.wikimedia.org/wikipedia/commons/a/
 {public_id: "olympic_flag"},
 function(error, result) {console.log(result);});   
 */
+

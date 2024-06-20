@@ -51,3 +51,4 @@ tempLi.forEach((l)=>{l.style.green = 'green'}) // all (one,two,three will be gre
 
 const tempClassList = document.getElementsByClassName('list-item') //getElementsByClassName will return HTMLCollection
 Array.from(tempClassList)  // converting HTMLCollection to array
+Array.from(tempLi)

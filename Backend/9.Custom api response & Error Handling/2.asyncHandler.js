@@ -21,3 +21,5 @@ const asyncHandler = (requestHandler) =>{
 }
 
 req.status(statusCode || 401);
+
+export {asyncHandler}

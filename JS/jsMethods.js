@@ -61,8 +61,42 @@ const obj = {
 
 // Object.keys
 const keys = Object.keys(obj)
-console.log(`The keys: ${keys}`)
+console.log(`The keys: ${keys}`)         // returns an array of keys
 
-// Objext.values
+// Object.values
 const values = Object.values(obj)
-console.log(`The value are: ${values }`)
+console.log(`The value are: ${values }`)  //returns an array of values
+
+// Object.entries
+const entries = Object.entries(obj);
+console.log(`The entries are ${entries}`)  // returns an array of key-value pair
+
+// Object.freeze
+const obj1 = {prop:32}
+Object.freeze(obj1)                        // freezes the object
+obj1.prop = 42
+console.log("After changing a freezed Object property's value(42) = " + obj1.prop)                     // can't add, delete or change anything
+
+// Object.seal
+const obj2 = {prop: 10}
+Object.seal(obj2)                         // can modify the object's property but can't add a new property
+obj2.prop = 32;
+obj2.newProp = 21;
+console.log(`Property's value of a sealed Object is ${obj2.prop} and, New property's value i am trying to add is: ${obj2.newProp}`)
+
+// Object.assign 
+const targetObj = {a:10, b:11, c:12, d:13, e:14, f:15}
+const returnedTarget = Object.assign(targetObj, obj)                            // asigns the value to one targetObject from the array of many Source objects
+console.log(`The new assigned object is :` + JSON.stringify(returnedTarget))
+
+// Object.getOwnPropertyDescriptor
+const obj3 = { a: 1 };
+const descriptor = Object.getOwnPropertyDescriptor(obj3, 'a');
+console.log(descriptor);
+// Output:
+// {
+//   value: 1,                          value: The value of the property.
+//   writable: true,                    writable: If true, the property's value can be changed.
+//   enumerable: true,                  enumerable: If true, the property will be included during enumeration of the object's properties (e.g., using for...in loop or Object.keys).
+//   configurable: true                 configurable: If true, the property can be deleted and its attributes (value, writable, enumerable, configurable) can be modified.
+// }

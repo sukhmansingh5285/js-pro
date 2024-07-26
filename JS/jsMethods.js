@@ -30,6 +30,9 @@ const spliceArr = array1.splice(1, 2);
 console.log(`New splice array = ` + spliceArr); // returns an array, but also makes changes to the original array
 console.log(`Original array1 array = ${array1}`);
 
+// join
+console.log("After joining the array" , array.join(":::"))  // returns a string with all elements of array joined
+
 // find
 const found = array.find((num) => {
   return num > 3;

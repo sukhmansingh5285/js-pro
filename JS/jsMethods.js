@@ -103,3 +103,14 @@ console.log(descriptor);
 //   enumerable: true,                  enumerable: If true, the property will be included during enumeration of the object's properties (e.g., using for...in loop or Object.keys).
 //   configurable: true                 configurable: If true, the property can be deleted and its attributes (value, writable, enumerable, configurable) can be modified.
 // }
+
+//////////////////////////////////////////////////////////////////////////Conversion///////////////////////////////////////////////////////////////////////////////////////////////
+
+JSON.parse() // string to JSON
+JSON.stringify() // Object to JSON string
+toString()   // anything to string
+parseInt()   // string to integer
+parseFloat() // string to float
+const date = new Date();
+const dateString = date.toString();
+console.log(dateString);  // use date constructor to convert date to string

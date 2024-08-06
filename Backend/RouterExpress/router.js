@@ -22,8 +22,13 @@ req.cookies -> sesssionId=abc123 -> Data sent by the client stored as cookies, t
   app.post()   -> to define a route handler for post requests to a specific path
   app.put()    -> to define a route handler for put requests to a specific path
   app.delete() -> to define a route handler for delete requests to a specific path
+  app.all()    -> to define a route handler for all the methods(get,post,put,dellte)
   app.use(path, callback) -> used to put middlewares at a path             
   app.listen(PORT, callback) -> to listen for connections on the specified host and port
   app.engine()
   app.route() -> to create chainable routes handlers 
+  app.patch()
+  app.handle()
+  app.options()
+  app.locals()
 */

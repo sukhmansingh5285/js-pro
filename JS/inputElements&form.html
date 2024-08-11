@@ -72,16 +72,15 @@
     <!-- submit, to submit a form -->
     submit: <input type="submit" value=""> <br>
 
-    
-
-    
-
-    
-
-    
-
-    
-
-
+    <!-- FORM -->
+    <form action="/submit" method="POST">   <!-- action=URL, method=get/post/...-->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <br>
+      <button type="submit">Submit</button>
+  </form>
 
 </body>

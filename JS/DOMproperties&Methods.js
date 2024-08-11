@@ -76,7 +76,10 @@ onsubmit="handleSubmit()"
     element.textContent = 'New Content';
 
     // attributes
-    // children
+    // children -> returns a live HTMLCollection of child elements of the given element
+    const Parent = document.getElementById(todoId);
+    Parent.children[2].innerHTML = "Done";
+
     // childNodes
     // firstChild
     // lastChild
@@ -146,10 +149,17 @@ onsubmit="handleSubmit()"
     parent.insertBefore(newChild, referenceNode);
 
     // cloneNode(deep)
+
     // setAttribute(name, value)
+    const thirdGrandChild = document.createElement('button');
+    thirdGrandChild.innerHTML = "Mark as Done";
+    thirdGrandChild.setAttribute("onclick", `markAsDone(${id})`);
+
     // getAttribute(name)
     // removeAttribute(name)
     // hasAttribute(name)
     // classList.add(className)
     // classList.remove(className)
     // classList.toggle(className)
+
+    

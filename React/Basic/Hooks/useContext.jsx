@@ -1,34 +1,34 @@
-// createContext
-import { createContext, useContext, useState } from "react";
+// createContext, useContext , Provider, value
+// ThemeContext.js
+import React, { createContext } from 'react';
 
-const Theme_con = createContext('light');
-const Auth_Con = createContext(null);
+const ThemeContext = createContext('light');
 
-function Button(){
-  const theme = useContext(Theme_con);
-}
+export default ThemeContext;
 
-function as(){
-  const currentUser = useContext(Auth_Con);
-}
-/////////////////////////////////////////////////////////
+// App.js
+import React from 'react';
+import ThemeContext from './ThemeContext';
+import ChildComponent from './ChildComponent';
 
-function App () {
-  const [theme, setTheme] = useState('light');
-
+const App = () => {
   return (
-    <ThemeContext.Provider value = {theme}>
-      <Page /> // hypothetical component
+    <ThemeContext.Provider value="dark">
+      <ChildComponent />
     </ThemeContext.Provider>
   );
-}
+};
 
-// how to use useContext in Page or any component within it
-function Child () {
-  const new_theme = useContext(ThemeContext);
-  return <button className="{new_theme}" />;
-}
+export default App;
 
 
+// ChildComponent.js
+import React, { useContext } from 'react';
+import ThemeContext from './ThemeContext';
 
+const ChildComponent = () => {
+  const theme = useContext(ThemeContext);
+  return <div>The current theme is {theme}</div>;
+};
 
+export default ChildComponent;

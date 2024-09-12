@@ -1,0 +1,32 @@
+ //mongoDB will run automatic behind, so to stop and restart it you could do
+ net stop mongoDB
+ net start mongoDB
+ 
+ 
+ // database
+show dbs 
+use latest_db
+
+
+
+
+
+
+
+ //collection
+ db.students.insertOne({name: "Ram"})    // it will also create collection "students"
+ db.collectionName.renameCollection("newCollectionName") // will rename the collection
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+

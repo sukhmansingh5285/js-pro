@@ -28,7 +28,10 @@ db.dropDatabase()  //deletes database
 text, boolean, number(integer(32bit), numberLong(64bit), numberDecimal), ObjectId, ISODate, Timestamp, Array, Embeded(Nested) Document
 
 
+// writeConcern yet to study
 
 
-
-
+// atomicity in mongoDB
+mongoDB provides atomicity only on Document level
+-> either the whole Document will get inserted, or it won't be at all
+-> but in case of many documents, documents which have gotten inserted will get inserted even if something bad happens

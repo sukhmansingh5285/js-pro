@@ -1,3 +1,4 @@
+//Schema Validation
 //db.createCollection two things -> nameOfCollection & json, json has validator & validationSchema, validator has
 // $jsonSchema, jsonSchema has required & properties, and 
 db.createCollection("nonfiction", {
@@ -19,3 +20,42 @@ db.createCollection("nonfiction", {
   },
   validationAction:"error"
 })
+
+
+// db.runCommand left to go
+
+
+
+
+
+
+
+//Mongoplant in MongoDB
+
+
+
+
+
+
+//MongoImport in MongoDB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

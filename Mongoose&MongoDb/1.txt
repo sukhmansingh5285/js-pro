@@ -6,7 +6,7 @@
  // database
 show dbs 
 use latest_db
-
+db.dropDatabase()  //deletes database
 
 
 
@@ -14,16 +14,18 @@ use latest_db
 
 
  //collection
+ show collections
  db.students.insertOne({name: "Ram"})    // it will also create collection "students"
  db.collectionName.renameCollection("newCollectionName") // will rename the collection
+ db.collectionName.drop()         //deletes the collection
  
  
  
  
  
  
- 
-
+//dataTypes
+text, boolean, number(integer(32bit), numberLong(64bit), numberDecimal), ObjectId, ISODate, Timestamp, Array, Embeded(Nested) Document
 
 
 

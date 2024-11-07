@@ -1,0 +1,6 @@
+// 1.Find the average age of students who are eligible.
+db.collection.aggregate([
+  { $match: { isEligible: true } },   // filter
+  { $group: { _id: null, averageAge: { $avg: "$age" } } }, //this is what we are going to see
+  { $project: { _id: 0, averageAge: 1 } } // to not show _id
+])

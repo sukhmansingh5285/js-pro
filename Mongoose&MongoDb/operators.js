@@ -64,10 +64,13 @@ db.collection.updateOne(
 db.collection.aggregate([{ $match: { age: { $gt: 25 } } }]);
 //2. $group -> Groups documents by a specified expression and outputs a document for each group
 db.collection.aggregate([{ $group: { _id: "$age", count: { $sum: 1 } } }]);
-//3. $proje -> Reshapes each document in the stream by adding, removing, or renaming fields
+//3. $project -> Reshapes each document in the stream by adding, removing, or renaming fields
 db.collection.aggregate([{ $project: { name: 1, age: 1 } }]);
 //4. $sort -> Sorts documents in the stream by a specified field
 db.collection.aggregate([{ $sort: { age: -1 } }]);
+
+// These are aggregation operators are also used:
+$sum, $min, $max, $count, $first, $last, $avg
 
 //D. Geospatial Operators
 //1. $geoWithin: Selects documents with geospatial data within a specified shape.

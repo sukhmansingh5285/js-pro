@@ -120,21 +120,56 @@ console.log(dateString);  // use date constructor to convert date to string
 
 
 ///////////////////////////////////////////////////////////////Most Important Ones at once///////////////////////////////////////////////////////////////////////////////////////
-console.log(eval('1+3'))
-console.log(parseInt('22343'))
-console.log(parseFloat('2332.23424'))
-console.log(isNaN('asf'))
-console.log(encodeURI('https:youtube.com'))
-console.log(decodeURI('https%3A%2F%2Fyoutube.com'))
-console.log(encodeURIComponent('https://youtube.com')); // 'https%3A%2F%2Fyoutube.com'
-console.log(decodeURIComponent('https%3A%2F%2Fyoutube.com')); // 'https://youtube.com'
-
-
-const obj10 = { a: 1, b: 2, c: 3 };
-console.log(Object.keys(obj10))
-console.log(Object.values(obj10))
-console.log(Object.entries(obj10))
-const target = {a:1}
-const src1 = {b:2, c:3}; const src2 = {d:4, e:5};
-Object.assign(target, src1, src2)
-console.log(target)
+// Global Functions:
+// eval(): Evaluates JavaScript code represented as a string.
+// parseInt(): Parses a string argument and returns an integer of the specified radix (base).
+// parseFloat(): Parses a string argument and returns a floating-point number.
+// isNaN(): Checks if a value is NaN (Not-a-Number).
+// isFinite(): Checks if a value is a finite number.
+// encodeURI(): Encodes a URI into a string.
+// decodeURI(): Decodes a URI from a string.
+// encodeURIComponent(): Encodes a URI component into a string.
+// decodeURIComponent(): Decodes a URI component from a string.
+// Object Related Functions:
+// Object.keys(): Returns an array of a given object's own property names.
+// Object.values(): Returns an array of a given object's own enumerable property values.
+// Object.entries(): Returns an array of a given object's own string-keyed property [key, value] pairs.
+// Object.assign(): Copies the values of all enumerable own properties from one or more source objects to a target object.
+// Array Methods:
+// push(): Adds one or more elements to the end of an array.
+// pop(): Removes the last element from an array.
+// shift(): Removes the first element from an array.
+// unshift(): Adds one or more elements to the beginning of an array.
+// concat(): Merges two or more arrays.
+// slice(): Extracts a section of an array and returns a new array.
+// splice(): Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// join(): Joins all elements of an array into a string.
+// indexOf(): Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+// lastIndexOf(): Returns the last index at which a given element can be found in the array, or -1 if it is not present.
+// forEach(): Executes a provided function once for each array element.
+// map(): Creates a new array with the results of calling a provided function on every element in the array.
+// filter(): Creates a new array with all elements that pass the test implemented by the provided function.
+// reduce(): Applies a function against an accumulator and each value in the array (from left-to-right) to reduce it to a single value.
+// sort(): Sorts the elements of an array in place and returns the sorted array.
+// String Methods:
+// charAt(): Returns the character at a specified index.
+// charCodeAt(): Returns the Unicode value of the character at a specified index.
+// concat(): Concatenates two or more strings.
+// indexOf(): Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.
+// lastIndexOf(): Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.
+// slice(): Extracts a section of a string and returns a new string.
+// split(): Splits a string into an array of substrings.
+// substring(): Returns the part of the string between the start and end indexes, or to the end of the string.
+// toLowerCase(): Converts the string to lowercase letters.
+// toUpperCase(): Converts the string to uppercase letters.
+// trim(): Removes whitespace from both ends of a string.
+// Math Object:
+// Math.random(): Returns a random number between 0 (inclusive) and 1 (exclusive).
+// Math.max(): Returns the largest of zero or more numbers.
+// Math.min(): Returns the smallest of zero or more numbers.
+// Math.round(): Rounds a number to the nearest integer.
+// Math.floor(): Rounds a number down to the nearest integer.
+// Math.ceil(): Rounds a number up to the nearest integer.
+// Date Object:
+// Date.now(): Returns the number of milliseconds since January 1, 1970.
+// new Date(): Creates a new Date object.

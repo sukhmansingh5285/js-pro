@@ -114,3 +114,27 @@ parseFloat() // string to float
 const date = new Date();
 const dateString = date.toString();
 console.log(dateString);  // use date constructor to convert date to string
+
+
+
+
+
+///////////////////////////////////////////////////////////////Most Important Ones at once///////////////////////////////////////////////////////////////////////////////////////
+console.log(eval('1+3'))
+console.log(parseInt('22343'))
+console.log(parseFloat('2332.23424'))
+console.log(isNaN('asf'))
+console.log(encodeURI('https:youtube.com'))
+console.log(decodeURI('https%3A%2F%2Fyoutube.com'))
+console.log(encodeURIComponent('https://youtube.com')); // 'https%3A%2F%2Fyoutube.com'
+console.log(decodeURIComponent('https%3A%2F%2Fyoutube.com')); // 'https://youtube.com'
+
+
+const obj10 = { a: 1, b: 2, c: 3 };
+console.log(Object.keys(obj10))
+console.log(Object.values(obj10))
+console.log(Object.entries(obj10))
+const target = {a:1}
+const src1 = {b:2, c:3}; const src2 = {d:4, e:5};
+Object.assign(target, src1, src2)
+console.log(target)

@@ -63,9 +63,9 @@ Variables declared with var are hoisted and initialized with undefined.
 Variables declared with let and const are hoisted but not initialized.
 */
 
-var a = 1;
+
 console.log(a); // undefined
-a = 10;
+var a = 10;
 console.log(a); // 10
 var a = 12;     // var can be re-declared 
 

@@ -130,11 +130,13 @@ console.log(dateString);  // use date constructor to convert date to string
 // decodeURI(): Decodes a URI from a string.
 // encodeURIComponent(): Encodes a URI component into a string.
 // decodeURIComponent(): Decodes a URI component from a string.
+
 // Object Related Functions:
 // Object.keys(): Returns an array of a given object's own property names.
 // Object.values(): Returns an array of a given object's own enumerable property values.
 // Object.entries(): Returns an array of a given object's own string-keyed property [key, value] pairs.
 // Object.assign(): Copies the values of all enumerable own properties from one or more source objects to a target object.
+
 // Array Methods:
 // push(): Adds one or more elements to the end of an array.
 // pop(): Removes the last element from an array.
@@ -151,6 +153,7 @@ console.log(dateString);  // use date constructor to convert date to string
 // filter(): Creates a new array with all elements that pass the test implemented by the provided function.
 // reduce(): Applies a function against an accumulator and each value in the array (from left-to-right) to reduce it to a single value.
 // sort(): Sorts the elements of an array in place and returns the sorted array.
+
 // String Methods:
 // charAt(): Returns the character at a specified index.
 // charCodeAt(): Returns the Unicode value of the character at a specified index.
@@ -163,6 +166,7 @@ console.log(dateString);  // use date constructor to convert date to string
 // toLowerCase(): Converts the string to lowercase letters.
 // toUpperCase(): Converts the string to uppercase letters.
 // trim(): Removes whitespace from both ends of a string.
+
 // Math Object:
 // Math.random(): Returns a random number between 0 (inclusive) and 1 (exclusive).
 // Math.max(): Returns the largest of zero or more numbers.
